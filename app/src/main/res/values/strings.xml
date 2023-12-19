@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">TechnocomTestProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_text">Keep matching up two of thye same object until there are no more to be paired and you clear the board.</string>
 </resources>
