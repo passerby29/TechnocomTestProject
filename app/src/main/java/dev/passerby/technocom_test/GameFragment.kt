@@ -28,13 +28,12 @@ class GameFragment : Fragment() {
 
     private lateinit var memoryGame: MemoryGame
     private lateinit var gameBoardAdapter: GameBoardAdapter
-    private var boardSize: BoardSize = BoardSize.STANDART
+    private var boardSize = BoardSize.STANDARD
 
     private lateinit var context: Context
 
     private var moves = 0
     private var coins = 100
-    private var level = ""
 
     private var timerSeconds = 0
     private val handler = Handler(Looper.getMainLooper())
@@ -111,21 +110,10 @@ class GameFragment : Fragment() {
             .commit()
     }
 
-    private fun openStartFragment() {
-        parentFragmentManager.popBackStack("start", 1)
-    }
-
-    private fun onRestartGame() {
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.mainContainer, GameFragment())
-            .commit()
-    }
-
     private fun flipTextView(
         textView: ImageView,
         position: Int,
         mDuration: Long = 300L,
-        reset: Boolean = false
     ): AnimatorSet {
 
         val flip90degrees = ObjectAnimator.ofFloat(textView, "rotationX", 0f, 90f).apply {

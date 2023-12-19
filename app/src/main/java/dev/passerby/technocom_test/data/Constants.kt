@@ -4,10 +4,6 @@ import dev.passerby.technocom_test.R
 
 object Constants {
 
-    const val TIMER_INTERVAL = 1000
-    const val MARGIN_SIZE = 8
-    const val TAG = "MemoryBoardAdapter"
-
     val IMAGES_LIST = listOf(
         R.drawable.im_1,
         R.drawable.im_2,

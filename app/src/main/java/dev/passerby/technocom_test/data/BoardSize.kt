@@ -1,11 +1,11 @@
 package dev.passerby.technocom_test.data
 
 enum class BoardSize(val numCards: Int) {
-    STANDART(20);
+    STANDARD(20);
 
     fun getWidth(): Int {
         return when (this) {
-            STANDART -> 4
+            STANDARD -> 4
         }
     }
 
