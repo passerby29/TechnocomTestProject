@@ -40,7 +40,7 @@ class FinishFragment : Fragment() {
                 finishDoubleRewardButton.isEnabled = false
             }
             finishHomeButton.setOnClickListener {
-                val saveCoins = preferences.getInt("coins", 0) + coins
+                val saveCoins = preferences.getInt("coins", 100) + coins
                 preferences.edit().putInt("coins", saveCoins).apply()
                 parentFragmentManager.beginTransaction()
                     .replace(R.id.mainContainer, StartFragment()).commit()

@@ -29,7 +29,7 @@ class StartFragment : Fragment() {
             Context.MODE_PRIVATE
         )
 
-        val coins = preferences.getInt("coins", 0)
+        val coins = preferences.getInt("coins", 100)
         binding.apply {
             startCoinsTextView.text = coins.toString()
             startGameButton.setOnClickListener {
